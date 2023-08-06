@@ -1,5 +1,5 @@
-# Require CMAKE 3.1 or higher
-cmake_minimum_required(VERSION 3.1)
+# Require CMAKE 3.12 or higher
+cmake_minimum_required(VERSION 3.12)
 
 # Project name
 project(tests)
