@@ -137,10 +137,6 @@ TEST_CASE("Animation tests")
 		as.Update(DELTA_TIME * 7);
 		REQUIRE(as.GetTexture() != nullptr);
 		REQUIRE(as.GetTexture()->mName == "Short");
-		REQUIRE(as.GetTexture() != nullptr);
-		REQUIRE(as.GetTexture()->mName == "Short");
-		REQUIRE(as.GetTexture() != nullptr);
-		REQUIRE(as.GetTexture()->mName == "Short");
 	}
 
 	SECTION("When switching from a longer animation to a 1-frame anim, it wraps properly")
