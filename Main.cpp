@@ -149,4 +149,12 @@ TEST_CASE("Animation tests")
 		REQUIRE(as.GetTexture() != nullptr);
 		REQUIRE(as.GetTexture()->mName == "Short");
 	}
+
+	SECTION("1-frame animation wraps properly when the anim timer is exactly 1.0")
+	{
+		as.SetAnimation("testAnim2");
+		as.Update(0.1f);
+		REQUIRE(as.GetTexture() != nullptr);
+		REQUIRE(as.GetTexture()->mName == "Short");
+	}
 }
